@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- css reset -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- javascript -->
+    <script src="main.js" async></script>
+    <title>Homepage | Luke Bassett | Front-End Developer</title>
+  </head>
+  <body>
+    <header class="nav-container">
+      <nav class="nav--main-nav">
+        <a href="#top"
+          ><img
+            src="./img/website-logo.png"
+            alt="Website Logo"
+            class="nav--main-nav--logo"
+        /></a>
+        <ul class="nav--main-nav--links">
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Projects</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+          <li>
+            <a href="" class="btn">Download CV</a>
+          </li>
+        </ul>
+        <div class="hamburger"><span></span><span></span><span></span></div>
+      </nav>
+    </header>
+    <section class="hero-section">
+      <div class="hero-container">
+        <h1 class="main-header">Hi, I'm <strong>Luke Bassett</strong>.</h1>
+        <h2 class="sub-header"><strong>Frontend Developer</strong></h2>
+        <p class="hero--body">
+          Based in <strong>England</strong>. I've a strong desire to make a
+          career out of creating software & applications! Currently enrolled in
+          <strong>Meta's Frontend Course</strong> after completing my
+          <strong>Computer Science HND</strong>.
+        </p>
+        <div class="hero--cta">
+          <a href="" class="btn">Projects</a>
+        </div>
+      </div>
+    </section>
+    <main>
+      <section class="about-section">
+        <h2 class="section-title">What I Do</h2>
+        <ul class="about--skills-container">
+          <li>
+            <div class="about--skills-icon">
+              <i class="fa-solid fa-pen"></i>
+            </div>
+            <h3 class="section-subtitle">Design</h3>
+            <p>
+              I know that design is not only about fonts and colours that can
+              make or break a complete product, Design also factors in how the
+              user interacts with the website including responsiveness,
+              animations.
+            </p>
+          </li>
+          <li>
+            <div class="about--skills-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3 class="section-subtitle">Development</h3>
+            <p>
+              I am passionate about web development, as such I understand that
+              working in teams code needs clean and cosistent code as well as an
+              ability to use version control within an application which is why
+              I've enrolled for the Meta Frontend course.
+            </p>
+          </li>
+          <li>
+            <div class="about--skills-icon">
+              <i class="fa-brands fa-readme"></i>
+            </div>
+            <h3 class="section-subtitle">Flexibility</h3>
+            <p>
+              During my Computer Science HND I have used various applications
+              that I can use to help me with designing and developing websites
+              and applications. Apps like Photoshop, InDesign, Figma have been
+              used in my projects.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="projects-section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-container">
+          <ul class="project-cards-container">
+            <li class="project-card">
+              <img src="./img/hos-laptop.png" alt="" class="projects-img" />
+              <div class="project-card--body">
+                <h3 class="section-subtitle">Harvey's of Stretton</h3>
+                <span class="project-type">Web App</span>
+                <p>
+                  Created for an assignment in my HND, This is a database
+                  management admin system for a fictional company. This allowed
+                  admins to manage and manipulate vehicle and customer databases
+                  secured with a password.
+                </p>
+                <a href="#" class="project-card--link">Find out more</a>
+              </div>
+            </li>
+            <li class="project-card">
+              <img src="./img/rps-laptop.png" alt="" class="projects-img" />
+              <div class="project-card--body">
+                <h3 class="section-subtitle">Rock Paper Scissors</h3>
+                <span class="project-type">Game</span>
+                <p>
+                  First game made with javascript to understand basic
+                  programming concepts within javascript.
+                </p>
+                <a href="#" class="project-card--link">Find out more</a>
+              </div>
+            </li>
+            <li class="project-card">
+              <img src="./img/f1-laptop.png" alt="" class="projects-img" />
+              <div class="project-card--body">
+                <h3 class="section-subtitle">Formula Statisticion</h3>
+                <span class="project-type">API Web App</span>
+                <p>
+                  This is a project I want to make including Formula 1 API's and
+                  make a application that can be used to view driver, team and
+                  track stats and information. Currently I have only made
+                  designs for the layout and have nothing to show yet.
+                </p>
+                <a href="" class="project-card--link">Find out more</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contact-section">
+        <div class="contact-cta">
+          <a href="#" class="contact-btn btn">Contact Me</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-section">
+      <div class="footer--left">
+        <img src="./img/website-logo.png" alt="" class="footer-left--logo" />
+        <p>
+          I am a Frontend Developer from the UK, I have a HND in Computer
+          Science. I can create simple and stylish websites.
+        </p>
+      </div>
+      <ul class="footer--mid">
+        <li>
+          <i class="fa-brands fa-twitter"></i>
+          <a href="#" class="footer--link">Twitter</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-github"></i>
+          <a href="#" class="footer--link">Github</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-linkedin"></i>
+          <a href="#" class="footer--link">LinkedIn</a>
+        </li>
+      </ul>
+      <ul class="footer--right">
+        <li>
+          <a href="" class="footer--link">About</a>
+          <p>Me and my development skills</p>
+        </li>
+        <li>
+          <a href="" class="footer--link">Projects</a>
+          <p>View my previous work</p>
+        </li>
+        <li>
+          <a href="" class="footer--link">Contact</a>
+          <p>Send a message through email or social media</p>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
