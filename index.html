@@ -48,16 +48,24 @@
         /></a>
         <ul class="nav--main-nav--links">
           <li>
-            <a href="">About</a>
+            <a href="#skills">About</a>
           </li>
           <li>
-            <a href="">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <a href="#blog">Blog</a>
           </li>
           <li>
-            <a href="" class="btn">Download CV</a>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <a
+              href="./rsrc/CV Luke Bassett (23-10-23).pdf"
+              target="_blank"
+              class="btn"
+              >Download CV</a
+            >
           </li>
         </ul>
         <div class="hamburger"><span></span><span></span><span></span></div>
@@ -74,13 +82,13 @@
           <strong>Computer Science HND</strong>.
         </p>
         <div class="hero--cta">
-          <a href="" class="btn">Projects</a>
+          <a href="#projects" class="btn">Projects</a>
         </div>
       </div>
     </section>
     <main>
       <section class="about-section">
-        <h2 class="section-title">What I Do</h2>
+        <h2 class="section-title" id="skills">What I Do</h2>
         <ul class="about--skills-container">
           <li>
             <div class="about--skills-icon">
@@ -120,7 +128,7 @@
           </li>
         </ul>
       </section>
-      <section class="projects-section">
+      <section class="projects-section" id="projects">
         <h2 class="section-title">Projects</h2>
         <div class="projects-container">
           <ul class="project-cards-container">
@@ -135,7 +143,12 @@
                   admins to manage and manipulate vehicle and customer databases
                   secured with a password.
                 </p>
-                <a href="#" class="project-card--link">Find out more</a>
+                <a
+                  href="https://github.com/lukejbassett/HoS-website-app"
+                  target="_blank"
+                  class="article--link"
+                  >Repository</a
+                >
               </div>
             </li>
             <li class="project-card">
@@ -147,7 +160,7 @@
                   First game made with javascript to understand basic
                   programming concepts within javascript.
                 </p>
-                <a href="#" class="project-card--link">Find out more</a>
+                <a href="#" class="article--link">Repository</a>
               </div>
             </li>
             <li class="project-card">
@@ -161,13 +174,48 @@
                   track stats and information. Currently I have only made
                   designs for the layout and have nothing to show yet.
                 </p>
-                <a href="" class="project-card--link">Find out more</a>
+                <a href="" class="article--link">Repository</a>
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="contact-section">
+      <section class="blog-section" id="blog">
+        <h2 class="section-title">Blog</h2>
+        <ul class="blog-container">
+          <li>
+            <h3 class="section-subtitle">Blog 1</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
+              fuga enim amet aut inventore fugiat, at delectus. Iusto eius ad
+              culpa commodi ratione iure aut! Perspiciatis ratione dolor
+              pariatur. Fuga!
+            </p>
+            <a href="#" class="article--link">Read More</a>
+          </li>
+          <li>
+            <h3 class="section-subtitle">Blog 2</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
+              fuga enim amet aut inventore fugiat, at delectus. Iusto eius ad
+              culpa commodi ratione iure aut! Perspiciatis ratione dolor
+              pariatur. Fuga!
+            </p>
+            <a href="#" class="article--link">Read More</a>
+          </li>
+          <li>
+            <h3 class="section-subtitle">Blog 3</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
+              fuga enim amet aut inventore fugiat, at delectus. Iusto eius ad
+              culpa commodi ratione iure aut! Perspiciatis ratione dolor
+              pariatur. Fuga!
+            </p>
+            <a href="#" class="article--link">Read More</a>
+          </li>
+        </ul>
+      </section>
+      <section class="contact-section" id="contact">
         <div class="contact-cta">
           <a href="#" class="contact-btn btn">Contact Me</a>
         </div>
@@ -181,34 +229,40 @@
           Science. I can create simple and stylish websites.
         </p>
       </div>
-      <ul class="footer--mid">
-        <li>
-          <i class="fa-brands fa-twitter"></i>
-          <a href="#" class="footer--link">Twitter</a>
-        </li>
-        <li>
-          <i class="fa-brands fa-github"></i>
-          <a href="#" class="footer--link">Github</a>
-        </li>
-        <li>
-          <i class="fa-brands fa-linkedin"></i>
-          <a href="#" class="footer--link">LinkedIn</a>
-        </li>
-      </ul>
-      <ul class="footer--right">
-        <li>
-          <a href="" class="footer--link">About</a>
-          <p>Me and my development skills</p>
-        </li>
-        <li>
-          <a href="" class="footer--link">Projects</a>
-          <p>View my previous work</p>
-        </li>
-        <li>
-          <a href="" class="footer--link">Contact</a>
-          <p>Send a message through email or social media</p>
-        </li>
-      </ul>
+      <div class="footer--right">
+        <ul class="right--socials">
+          <li>
+            <i class="fa-brands fa-twitter"></i>
+            <a href="#" class="footer--link">Twitter</a>
+          </li>
+          <li>
+            <i class="fa-brands fa-github"></i>
+            <a href="#" class="footer--link">Github</a>
+          </li>
+          <li>
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="#" class="footer--link">LinkedIn</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="" class="footer--link">About</a>
+            <p>Me and my development skills</p>
+          </li>
+          <li>
+            <a href="" class="footer--link">Projects</a>
+            <p>View my previous work</p>
+          </li>
+          <li>
+            <a href="" class="footer--link">Blog</a>
+            <p>Read about my career, hobbies and events!</p>
+          </li>
+          <li>
+            <a href="" class="footer--link">Contact</a>
+            <p>Send a message through email or social media</p>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
