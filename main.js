@@ -1,6 +1,6 @@
 // CV download function
 function downloadCV() {
-  window.open("./rsrc/CV Luke Bassett (23-10-23).pdf");
+  window.open("./rsrc/lukebcv.pdf");
 }
 
 // navigation hamburger for mobile screens
