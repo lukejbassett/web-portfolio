@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <title>Homepage | Luke Bassett | Frontend Developer</title>
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- font awesome -->
+    <!-- icons (font awesome) -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -33,235 +33,127 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="styles.css" />
     <!-- javascript -->
-    <script src="main.js" async></script>
-    <title>Homepage | Luke Bassett | Front-End Developer</title>
+    <script src="index.js" async></script>
   </head>
   <body>
-    <header class="nav-container">
-      <nav class="nav--main-nav">
-        <a href="#top"
-          ><img
-            src="./img/website-logo.png"
-            alt="Website Logo"
-            class="nav--main-nav--logo"
-        /></a>
-        <ul class="nav--main-nav--links">
-          <li>
-            <a href="#skills">About</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#blog">Blog</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-          <li>
-            <a
-              href="./rsrc/CV Luke Bassett (23-10-23).pdf"
-              target="_blank"
-              class="btn"
-              >Download CV</a
-            >
-          </li>
-        </ul>
-        <div class="hamburger"><span></span><span></span><span></span></div>
-      </nav>
-    </header>
+    <nav class="nav-container">
+      <a href="#top">
+        <img src="./rsrc/newlogo.png" alt="Website logo" style="width: 60px" />
+      </a>
+      <ul class="nav-links">
+        <li>
+          <a href="#about" class="hover-anim">About</a>
+        </li>
+        <li>
+          <a href="#projects" class="hover-anim">Projects</a>
+        </li>
+        <li>
+          <a href="#contact" class="hover-anim">Contact</a>
+        </li>
+        <li>
+          <button type="button" onclick="downloadCV()" class="primary-btn">
+            Download CV
+          </button>
+        </li>
+      </ul>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </nav>
     <section class="hero-section">
       <div class="hero-container">
-        <h1 class="main-header">Hi, I'm <strong>Luke Bassett</strong>.</h1>
-        <h2 class="sub-header"><strong>Frontend Developer</strong></h2>
-        <p class="hero--body">
-          Based in <strong>England</strong>. I've a strong desire to make a
-          career out of creating software & applications! Currently enrolled in
-          <strong>Meta's Frontend Course</strong> after completing my
-          <strong>Computer Science HND</strong>.
+        <h1 class="hero-title">Hi, I'm <strong>Luke Bassett</strong>.</h1>
+        <h2 class="hero-subtitle"><strong>Frontend Developer</strong></h2>
+        <p class="hero-body">
+          I've a strong desire to make a career out of creating software &
+          applications for the world to use! Currently in University studying
+          Computer Science. Based in the North West, England.
         </p>
-        <div class="hero--cta">
-          <a href="#projects" class="btn">Projects</a>
-        </div>
+        <a href="#projects" class="hero-cta primary-btn">Projects</a>
       </div>
     </section>
     <main>
-      <section class="about-section">
-        <h2 class="section-title" id="skills">What I Do</h2>
-        <ul class="about--skills-container">
-          <li>
-            <div class="about--skills-icon">
-              <i class="fa-solid fa-pen"></i>
-            </div>
-            <h3 class="section-subtitle">Design</h3>
-            <p>
-              I know that design is not only about fonts and colours that can
-              make or break a complete product, Design also factors in how the
-              user interacts with the website including responsiveness,
-              animations.
-            </p>
-          </li>
-          <li>
-            <div class="about--skills-icon">
-              <i class="fa-solid fa-code"></i>
-            </div>
-            <h3 class="section-subtitle">Development</h3>
-            <p>
-              I am passionate about web development, as such I understand that
-              working in teams code needs clean and cosistent code as well as an
-              ability to use version control within an application which is why
-              I've enrolled for the Meta Frontend course.
-            </p>
-          </li>
-          <li>
-            <div class="about--skills-icon">
-              <i class="fa-brands fa-readme"></i>
-            </div>
-            <h3 class="section-subtitle">Flexibility</h3>
-            <p>
-              During my Computer Science HND I have used various applications
-              that I can use to help me with designing and developing websites
-              and applications. Apps like Photoshop, InDesign, Figma have been
-              used in my projects.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section class="projects-section" id="projects">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-container">
+      <section id="projects">
+        <div class="project-container">
+          <h2 class="section-title">Projects</h2>
           <ul class="project-cards-container">
             <li class="project-card">
-              <img src="./img/hos-laptop.png" alt="" class="projects-img" />
-              <div class="project-card--body">
+              <div class="project-card-img">
+                <img
+                  src="./rsrc/hos-laptop.png"
+                  alt="Harvey's of Stretton company logo"
+                  class="projects-img"
+                />
+              </div>
+              <div class="project-card-desc">
                 <h3 class="section-subtitle">Harvey's of Stretton</h3>
-                <span class="project-type">Web App</span>
-                <p>
-                  Created for an assignment in my HND, This is a database
-                  management admin system for a fictional company. This allowed
-                  admins to manage and manipulate vehicle and customer databases
-                  secured with a password.
+                <p class="project-type">Application</p>
+                <p class="project-desc">
+                  The first application I created. This was an HND assignment to
+                  create a database management system using XAMMP, HeidiSQL PHP
+                  and JavaScript.
                 </p>
                 <a
                   href="https://github.com/lukejbassett/HoS-website-app"
                   target="_blank"
-                  class="article--link"
+                  class="project-repo hover-anim"
                   >Repository</a
                 >
               </div>
             </li>
-            <!-- <li class="project-card">
-              <img src="./img/rps-laptop.png" alt="" class="projects-img" />
-              <div class="project-card--body">
-                <h3 class="section-subtitle">Rock Paper Scissors</h3>
-                <span class="project-type">Game</span>
-                <p>
-                  First game made with javascript to understand basic
-                  programming concepts within javascript.
-                </p>
-                <a href="#" class="article--link">Repository</a>
-              </div>
-            </li> -->
             <li class="project-card">
-              <img src="./img/f1-laptop.png" alt="" class="projects-img" />
-              <div class="project-card--body">
-                <h3 class="section-subtitle">Formula Statisticion <span style="color: red;">IDEA WIP</span></h3>
-                <span class="project-type">API Web App</span>
-                <p>
-                  This is a project I want to make including Formula 1 API's and
-                  make a application that can be used to view driver, team and
-                  track stats and information. Currently I have only made
-                  designs for the layout and have nothing to show yet.
+              <div class="project-card-img">
+                <img
+                  src="./rsrc/hos-laptop.png"
+                  alt="Harvey's of Stretton company logo"
+                  class="projects-img"
+                />
+              </div>
+              <div class="project-card-desc">
+                <h3 class="section-subtitle">Title</h3>
+                <p class="project-type">Type</p>
+                <p class="project-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Provident alias, quia molestias suscipit deserunt, quod quidem
+                  atque saepe sed est quasi vel culpa ab doloribus facere vero
+                  omnis a distinctio.
                 </p>
-                <!-- <a href="" class="article--link">Repository</a> -->
+                <a href="#" target="_blank" class="project-repo hover-anim"
+                  >Repository</a
+                >
+              </div>
+            </li>
+            <li class="project-card">
+              <div class="project-card-img">
+                <img
+                  src="./rsrc/hos-laptop.png"
+                  alt="Harvey's of Stretton company logo"
+                  class="projects-img"
+                />
+              </div>
+              <div class="project-card-desc">
+                <h3 class="section-subtitle">Title</h3>
+                <p class="project-type">Type</p>
+                <p class="project-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Provident alias, quia molestias suscipit deserunt, quod quidem
+                  atque saepe sed est quasi vel culpa ab doloribus facere vero
+                  omnis a distinctio.
+                </p>
+                <a href="#" target="_blank" class="project-repo hover-anim"
+                  >Repository</a
+                >
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <!-- <section class="blog-section" id="blog">
-        <h2 class="section-title">Blog</h2>
-        <ul class="blog-container">
-          <li>
-            <h3 class="section-subtitle">Blog 1</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
-              fuga enim amet aut inventore fugiat, at delectus. Iusto eius ad
-              culpa commodi ratione iure aut! Perspiciatis ratione dolor
-              pariatur. Fuga!
-            </p>
-            <a href="#" class="article--link">Read More</a>
-          </li>
-          <li>
-            <h3 class="section-subtitle">Blog 2</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
-              fuga enim amet aut inventore fugiat, at delectus. Iusto eius ad
-              culpa commodi ratione iure aut! Perspiciatis ratione dolor
-              pariatur. Fuga!
-            </p>
-            <a href="#" class="article--link">Read More</a>
-          </li>
-          <li>
-            <h3 class="section-subtitle">Blog 3</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
-              fuga enim amet aut inventore fugiat, at delectus. Iusto eius ad
-              culpa commodi ratione iure aut! Perspiciatis ratione dolor
-              pariatur. Fuga!
-            </p>
-            <a href="#" class="article--link">Read More</a>
-          </li>
-        </ul>
-      </section> -->
-      <section class="contact-section" id="contact">
-        <div class="contact-cta">
-          <!-- <a href="#" class="contact-btn btn">Contact Me</a> -->
-        </div>
-      </section>
     </main>
-    <footer class="footer-section">
-      <div class="footer--left">
-        <img src="./img/website-logo.png" alt="" class="footer-left--logo" />
-        <p>
-          I am a Frontend Developer from the UK, I have a HND in Computer
-          Science. I can create simple and stylish websites.
-        </p>
-      </div>
-      <div class="footer--right">
-        <ul class="right--socials">
-          <li>
-            <i class="fa-brands fa-twitter"></i>
-            <a href="#" class="footer--link">Twitter</a>
-          </li>
-          <li>
-            <i class="fa-brands fa-github"></i>
-            <a href="#" class="footer--link">Github</a>
-          </li>
-          <li>
-            <i class="fa-brands fa-linkedin"></i>
-            <a href="#" class="footer--link">LinkedIn</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="" class="footer--link">About</a>
-            <p>Me and my development skills</p>
-          </li>
-          <li>
-            <a href="" class="footer--link">Projects</a>
-            <p>View my previous work</p>
-          </li>
-          <li>
-            <a href="" class="footer--link">Blog</a>
-            <p>Read about my career, hobbies and events!</p>
-          </li>
-          <li>
-            <a href="" class="footer--link">Contact</a>
-            <p>Send a message through email or social media</p>
-          </li>
-        </ul>
+    <footer class="footer-container">
+      <img src="./rsrc/newlogo.png" alt="Website logo" style="width: 60px" />
+      <div class="footer-bottom">
+        <p class="footer-span">Website designed by Luke Bassett</p>
       </div>
     </footer>
   </body>
