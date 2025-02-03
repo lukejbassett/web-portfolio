@@ -83,7 +83,7 @@
     <section class="hero-section">
       <div class="hero-container">
         <h1 class="hero-title">Hi, I'm <strong>Luke Bassett</strong>.</h1>
-        <h2 class="hero-subtitle"><strong>Frontend Developer</strong></h2>
+        <h2 class="hero-subtitle"><strong>Software Developer</strong></h2>
         <p class="hero-body">
           I've a strong desire to make a career out of creating software &
           applications for the world to use! Currently in University studying
@@ -92,6 +92,24 @@
         <a href="#projects" class="hero-cta primary-btn">Projects</a>
       </div>
     </section>
+    <div class="toTopBtn">
+      <button onclick="toTop()" class="to-top-btn" title="Go To Top">
+        <svg
+          width="40"
+          height="40"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <path d="M9 22V12h6v10"></path>
+        </svg>
+      </button>
+    </div>
     <main>
       <section id="projects">
         <div class="project-container">
@@ -170,9 +188,72 @@
       </section>
     </main>
     <footer class="footer-container">
-      <img src="./img/newlogo.png" alt="Website logo" style="width: 60px" />
-      <div class="footer-bottom">
-        <p class="footer-span">Website designed by Luke Bassett</p>
+      <!-- <img src="./img/newlogo.png" alt="Website logo" style="width: 60px" /> -->
+      <p class="section-title">Luke Bassett</p>
+      <ul class="footer-socials">
+        <li>
+          <a href="https://x.com/Luke_Bassett4" target="_blank">
+            <svg
+              width="36"
+              height="36"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5 0-.278-.028-.556-.08-.83A7.72 7.72 0 0 0 23 3Z"
+              ></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/lukejbassett/" target="_blank">
+            <svg
+              width="36"
+              height="36"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              ></path>
+              <path d="M2 9h4v12H2z"></path>
+              <path d="M4 2a2 2 0 1 0 0 4 2 2 0 1 0 0-4z"></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:bassettlukej@gmail.com"></a>
+          <svg
+            width="36"
+            height="36"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+            ></path>
+            <path d="m22 6-10 7L2 6"></path>
+          </svg>
+        </li>
+      </ul>
+      <div class="footer-host">
+        <p>Powered by</p>
+        <a href="https://vercel.com/" target="_blank">Vercel</a>
       </div>
     </footer>
   </body>
